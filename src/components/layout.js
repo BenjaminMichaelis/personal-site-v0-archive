@@ -1,10 +1,9 @@
 import * as React from "react"
 import PropTypes from "prop-types"
-
 import { Sidebar, Menu, Container, Button, Segment } from "semantic-ui-react"
-
 import Navbar from "./navbar"
 import NavLinks from "./navLinks"
+import { Emojione } from "react-emoji-render";
 
 const Layout = ({ children }) => {
   const [visible, setVisible] = React.useState(false)
@@ -32,7 +31,7 @@ const Layout = ({ children }) => {
         />
         <Container as="main">{children}</Container>
         <Segment attached color="blue" inverted textAlign="center" as="footer">
-          © {new Date().getFullYear()}, Made with <i class="fas fa-heart"></i> by Benjamin Michaelis
+        &copy; {new Date().getFullYear()}, Made with <Emojione text="❤️" className="text-base mx-1 mt-1" /> by Benjamin Michaelis
         </Segment>
       </Sidebar.Pusher>
     </Sidebar.Pushable>

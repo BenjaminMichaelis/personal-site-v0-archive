@@ -1,7 +1,7 @@
 import * as React from "react"
 import "semantic-ui-css/semantic.min.css"
 import { Link } from "gatsby"
-
+import { StaticImage } from "gatsby-plugin-image"
 import {
   Grid,
   Header,
@@ -9,11 +9,12 @@ import {
   Container,
   Segment,
   Button,
+  Image,
 } from "semantic-ui-react"
 
 import NavLinks from "./navLinks"
 
-const Navbar = () => {
+const Navbar = ({setVisible, visible}) => {
   return (
     <>
       <Segment inverted color="blue" size="large" as="nav" attached>
@@ -21,18 +22,18 @@ const Navbar = () => {
           <Grid>
             <Grid.Row>
               <Grid.Column width="6" verticalAlign="middle" as={Link} to="/">
-                <Header as="h1" size="small" inverted>
-                  My App
+                <Header as="h1">
+                    <Image circular src='https://imgur.com/dYwvbDV.png' />
                 </Header>
               </Grid.Column>
               <Grid.Column width="10" only="mobile">
                 <Header size="tiny" textAlign="right">
                   <Icon
                     name="bars"
-                    link
+                    link="../images/BAMIcon.png"
                     size="big"
                     inverted
-                    // TODO add onclick function
+                    onClick={() => setVisible(!visible)}
                   />
                 </Header>
               </Grid.Column>
