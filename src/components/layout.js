@@ -1,6 +1,5 @@
 import * as React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
 
 import { Sidebar, Menu, Container, Button, Segment } from "semantic-ui-react"
 
@@ -33,8 +32,7 @@ const Layout = ({ children }) => {
         />
         <Container as="main">{children}</Container>
         <Segment attached color="blue" inverted textAlign="center" as="footer">
-          © {new Date().getFullYear()}, Built with
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
+          © {new Date().getFullYear()}, Made with <i class="fas fa-heart"></i> by Benjamin Michaelis
         </Segment>
       </Sidebar.Pusher>
     </Sidebar.Pushable>

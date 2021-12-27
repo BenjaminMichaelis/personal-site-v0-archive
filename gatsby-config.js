@@ -1,10 +1,27 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://bencodes.michaelis.net/",
     title: "Benjamin Michaelis",
+    description: "Software Engineering Student @ Washington State University",
     author: "Benjamin Michaelis",
+    siteUrl: "https://bencodes.michaelis.net/",
+    social: {
+      github: `@BenjaminMichaelis`,
+    },
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: "Benjamin Michaelis",
+        short_name: "BAM",
+        start_url: "/",
+        background_color: "#ffffff",
+        theme_color: "#2e4052",
+        display: "standalone",
+        icon: `src/images/icon.png`,
+        crossOrigin: `use-credentials`,
+      },
+    },
     {
       resolve: "gatsby-plugin-google-analytics",
       options: {

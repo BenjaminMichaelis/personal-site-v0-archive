@@ -11,17 +11,21 @@
  import { useStaticQuery, graphql } from "gatsby"
  
  function SEO({ description, lang, meta, title }) {
-   const { site } = useStaticQuery(
-     graphql`
-       query {
-         site {
-           siteMetadata {
-             title
-           }
-         }
-       }
-     `
-   )
+    const { site } = useStaticQuery(graphql`
+    query DefaultSEOQuery {
+      site {
+        siteMetadata {
+          title
+          description
+          author
+          siteUrl
+          social {
+            github
+          }
+        }
+      }
+    }
+  `);
  
    const metaDescription = description || site.siteMetadata.description
    const defaultTitle = site.siteMetadata?.title
