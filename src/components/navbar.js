@@ -22,8 +22,8 @@ const Navbar = ({setVisible, visible}) => {
           <Grid>
             <Grid.Row>
               <Grid.Column width="6" verticalAlign="middle" as={Link} to="/">
-                <Header as="h1">
-                    <Image circular src='https://imgur.com/dYwvbDV.png' />
+                <Header as="h1" size="small" inverted>
+                    <Image circular src='https://imgur.com/dYwvbDV.png'/>
                 </Header>
               </Grid.Column>
               <Grid.Column width="10" only="mobile">

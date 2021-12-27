@@ -4,6 +4,7 @@ import { Sidebar, Menu, Container, Button, Segment } from "semantic-ui-react"
 import Navbar from "./navbar"
 import NavLinks from "./navLinks"
 import { Emojione } from "react-emoji-render";
+import '../css/layout.css'
 
 const Layout = ({ children }) => {
   const [visible, setVisible] = React.useState(false)
@@ -31,7 +32,14 @@ const Layout = ({ children }) => {
         />
         <Container as="main">{children}</Container>
         <Segment attached color="blue" inverted textAlign="center" as="footer">
-        &copy; {new Date().getFullYear()}, Made with <Emojione text="❤️" className="text-base mx-1 mt-1" /> by Benjamin Michaelis
+        &copy; {new Date().getFullYear()}, Made with <Emojione text="❤️" className="text-base mx-1 mt-1" /> by <a color="white" href="https://github.com/BenjaminMichaelis" target="_blank" rel="noopener noreferrer">Benjamin Michaelis</a>
+        <span class="span">
+            <a href="https://github.com/BenjaminMichaelis/personal-site" target="_blank" rel="noopener noreferrer">
+                <div class="link">
+                    <i class="fab fa-github fa-2x"></i>
+                </div>
+            </a>
+        </span>
         </Segment>
       </Sidebar.Pusher>
     </Sidebar.Pushable>

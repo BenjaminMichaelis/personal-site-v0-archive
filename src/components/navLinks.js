@@ -9,11 +9,8 @@ const NavLinks = () => {
       <Button as={Link} color="blue" to="/">
         Home
       </Button>
-      <Button as={Link} color="blue" to="/page-2/">
-        Second page
-      </Button>
-      <Button as={Link} color="blue" to="/using-typescript/">
-        Typescript page
+      <Button as={Link} color="blue" to="/about/">
+        About Me
       </Button>
     </>
   )
