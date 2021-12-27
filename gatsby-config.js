@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     siteUrl: "https://bencodes.michaelis.net/",
     title: "Benjamin Michaelis",
+    author: "Benjamin Michaelis",
   },
   plugins: [
     {
