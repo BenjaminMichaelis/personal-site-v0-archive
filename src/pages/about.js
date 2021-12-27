@@ -1,18 +1,17 @@
 import * as React from "react"
 import Layout from "../components/layout"
 import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
 import SEO from "../components/seo.js"
 
 // markup
-const IndexPage = () => {
+const AboutPage = () => {
   return (
     <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Now go build something great.</p>
+    <h1>I'm Ben</h1>
+    <p>This is a little about myself</p>
   </Layout>
   )
 }
 
-export default IndexPage
+export default AboutPage

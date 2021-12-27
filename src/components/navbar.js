@@ -30,7 +30,7 @@ const Navbar = ({setVisible, visible}) => {
                 <Header size="tiny" textAlign="right">
                   <Icon
                     name="bars"
-                    link="../images/BAMIcon.png"
+                    link
                     size="big"
                     inverted
                     onClick={() => setVisible(!visible)}
