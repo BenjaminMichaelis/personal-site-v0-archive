@@ -1,9 +1,9 @@
 import * as React from "react"
 import PropTypes from "prop-types"
-import { Sidebar, Menu, Container, Button, Segment } from "semantic-ui-react"
+import { Sidebar, Menu, Container, Button } from "semantic-ui-react"
 import Navbar from "./navbar"
 import NavLinks from "./navLinks"
-import { Emojione } from "react-emoji-render";
+import Footer from "./footer"
 import '../css/layout.css'
 
 const Layout = ({ children }) => {
@@ -31,16 +31,7 @@ const Layout = ({ children }) => {
           visible={visible}
         />
         <Container as="main">{children}</Container>
-        <Segment attached color="blue" inverted textAlign="center" as="footer">
-        &copy; {new Date().getFullYear()}, Made with <Emojione text="❤️" className="text-base mx-1 mt-1" /> by <a color="white" href="https://github.com/BenjaminMichaelis" target="_blank" rel="noopener noreferrer">Benjamin Michaelis</a>
-        <span class="span">
-            <a href="https://github.com/BenjaminMichaelis/personal-site" target="_blank" rel="noopener noreferrer">
-                <div class="link">
-                    <i class="fab fa-github fa-2x"></i>
-                </div>
-            </a>
-        </span>
-        </Segment>
+        <Footer />
       </Sidebar.Pusher>
     </Sidebar.Pushable>
   )
