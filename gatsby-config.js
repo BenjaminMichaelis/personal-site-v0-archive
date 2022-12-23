@@ -20,6 +20,18 @@ module.exports = {
         display: "standalone",
         icon: `static/icons/BAMIcon.png`,
         crossOrigin: `use-credentials`,
+        icons: [
+          {
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+          },
+          {
+            "src": "/android-chrome-384x384.png",
+            "sizes": "384x384",
+            "type": "image/png"
+          },
+        ]
       },
       icons: [
         {
@@ -37,7 +49,15 @@ module.exports = {
     {
       resolve: "gatsby-plugin-google-analytics",
       options: {
-        trackingId: "G-S10Q6VG46J",
+        trackingId: "UA-218221996-4",
+      },
+    },
+    {
+      resolve: "gatsby-plugin-google-gtag",
+      options: {
+        trackingIds: [
+          "G-0MBFQCH50V", // Google Analytics / GA
+        ],
       },
     },
     "gatsby-plugin-sitemap",
