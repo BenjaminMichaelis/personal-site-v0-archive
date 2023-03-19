@@ -18,6 +18,7 @@ module.exports = {
         background_color: "#ffffff",
         theme_color: "#2e4052",
         display: "standalone",
+        icon: `static/icons/BAMIcon.png`,
         crossOrigin: `use-credentials`,
         icons: [
           {
@@ -32,6 +33,18 @@ module.exports = {
           },
         ]
       },
+      icons: [
+        {
+          "src": "/android-chrome-192x192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        },
+        {
+          "src": "/android-chrome-384x384.png",
+          "sizes": "384x384",
+          "type": "image/png"
+        },
+      ]
     },
     {
       resolve: "gatsby-plugin-google-analytics",
