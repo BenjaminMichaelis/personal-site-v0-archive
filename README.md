@@ -1,52 +1,24 @@
-#  personal-site
+# personal-site
 
-This template should help get you started developing with Vue 3 in Vite.
+## Installation and Startup Steps
 
-## Recommended IDE Setup
+1. Install [Node.js](https://nodejs.org/en/download/) version 16.0 or higher
+2. Clone the project locally
+3. Navigate to the project locally, and open up your terminal and run `npm install`
+4. To launch the application, run `npm run dev` (Compiles and hot-reloads for development)
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## Production
 
-## Type Support for `.vue` Imports in TS
+To compile and minifies for production
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+`npm run build`
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+## Lints and fixes files
 
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+To check if files need linting:
 
-## Customize configuration
+`npm run lint`
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+To try and fix files:
 
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
-npm run test:unit
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+`npm run lint:fix`
